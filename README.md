@@ -4,7 +4,7 @@
 _(Don’t know what `vhtml` is? Check this [link](https://github.com/developit/vhtml) out)_
 
 ## Installation
-`npm i —save vrouter`
+`npm i —-save vrouter`
 
 
 
