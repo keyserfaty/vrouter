@@ -1,5 +1,5 @@
 # vrouter 🌟
-`vrouter` is a simple and lightweight (`~900 Bytes`) router for `vhtml`.
+`vrouter` is a simple and lightweight (`~345 Bytes gzip`) router for `vhtml`.
 
 _(Don’t know what `vhtml` is? Check this [link](https://github.com/developit/vhtml) out)_
 
@@ -21,7 +21,7 @@ _(Don’t know what `vhtml` is? Check this [link](https://github.com/developit/v
 ## Getting started
 ``` js
 import h from 'vhtml'
-import { router } from 'vrouter'
+import router from 'vrouter'
 
 import PostsContainer from './PostsContainer'
 import PostContainer from './PostContainer'
@@ -113,7 +113,7 @@ Finally it will attach two listeners to  `window`: a `load` event and a `hashcha
 Whenever any of these two events is triggered it will call the `redirect` function and perform all the logic related to the changes in the DOM.
 
 ``` js
-export const router = (routes, root) => {
+export function router (routes, root) {
   window.addEventListener('load', () => {
     redirect(routes, root)
   }, false)
@@ -127,13 +127,5 @@ export const router = (routes, root) => {
 
 ## License
 Released under The MIT License
-
-
-
-
-
-
-
-
 
 

@@ -1,7 +1,7 @@
 {
   "name": "vrouter",
   "amdName": "vrouter",
-  "version": "1.0.5",
+  "version": "2.0.1",
   "description": "A wondrous router for vhtml",
   "main": "dist/vrouter.js",
   "minified:main": "dist/vrouter.min.js",

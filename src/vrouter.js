@@ -22,7 +22,7 @@ const redirect = (routes, root) => {
  * @param routes: Object: routes object
  * @param root: DOM node: element to append components to
  */
-export const router = (routes, root) => {
+export default function router (routes, root) {
   window.addEventListener('load', () => {
     redirect(routes, root)
   }, false)
