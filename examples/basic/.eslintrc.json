@@ -1,0 +1,10 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "ENV": true
+  },
+  "extends": "standard"
+}
