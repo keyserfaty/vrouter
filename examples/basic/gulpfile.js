@@ -22,10 +22,7 @@ var chalk = require('chalk')
 var paths = {
   entry: 'src/app.js',
   dest: 'dist',
-  scripts: 'src/**/*.js',
-  images: 'src/statics/images',
-  css: 'src/statics/**/*.css',
-  html: 'src/statics/**/*.html'
+  scripts: 'src/**/*.js'
 }
 
 function mapError (err) {

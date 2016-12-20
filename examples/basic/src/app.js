@@ -1,5 +1,4 @@
 import h from 'vhtml'
-
 import router from 'vrouter'
 
 import Layout from './views/Layout'
