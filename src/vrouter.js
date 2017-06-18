@@ -1,20 +1,23 @@
-//* Helper functions
-const ifElse = (i, e) =>
-  cond => cond ? i : e
-
-//* Handle content to be displayed in the view
+// Handle content to be displayed in the view
 const redirect = (routes, root) => {
   const route = location.hash.split('/')[1] || ''
-  const hasIndexRedirect = routes.hasOwnProperty('indexRedirect')
 
-  const isIndex = (i, e) => ifElse(i, e)(route === '')
+  const _getIndex = () => {
+    if (routes.hasOwnProperty('indexRedirect')) {
+      return routes[routes.indexRedirect]
+    }
+    return ''
+  }
 
-  //* Handle which component will be attached to the root component
-  root.innerHTML =
-    isIndex(
-      ifElse(routes[routes.indexRedirect], '')(hasIndexRedirect),
-      routes[route]
-    )()
+  const _getRoute = (index, other) => {
+    if (route === '') {
+      return index
+    }
+    return other
+  }
+
+  // Handle which component will be attached to the root component
+  root.innerHTML = _getRoute(_getIndex(), routes[route])
 }
 
 /**
