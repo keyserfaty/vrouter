@@ -9,7 +9,7 @@
   },
   "author": "keyserfaty <keserfaty@gmail.com>",
   "dependencies": {
-    "express": "^4.14.0",
+    "express": "^4.17.3",
     "vhtml": "^2.1.0",
     "vrouter": "^2.0.1"
   },
